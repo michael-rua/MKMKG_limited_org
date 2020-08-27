@@ -32,23 +32,24 @@ https://am22.akamaized.net/tms/cnt/uploads/2016/03/ancient-aliens-guy-1170x1024.
 
 **Required Routes:**
 
-- [ ] Home/welcoming route/path '/'.
-- [ ] List of images route/path '/imageSelection'.
-- [ ] Meme image and text box route/path '/makeYourMeme/:Image'
+- [ ] Home/welcoming route/path - '/'.
+- [ ] List of images route/path - '/imageSelection'.
+- [ ] Meme image and text box route/path - '/makeYourMeme/:Image'
+
     *optional as this could be the image and text with no text box displayed*
-- [ ] Final meme displayed route/path '/yourMeme'
+- [ ] Final meme displayed route/path - '/yourMeme'
 
 **Required components**
 
-- [ ] Initial start meme button/ link on the home path'/'
+- [ ] Initial start meme button/ link on the home path -'/'
 
-- [ ] Image list/ grouping to select the backdrop of the meme on the '/imageSelection' path
+- [ ] Image list/ grouping to select the backdrop of the meme on the - '/imageSelection' path
 
-- [ ] Home button/ a back button to return to the Image list. this will be on the '/makeYourMeme' path
-- [ ] Text box which is a form with a submit button on the '/makeYourMeme' path
-- [ ] Image that was selected from the images list. Displayed on the '/makeYourMeme' path
-- [ ] Text inserted from the form that will be overlayed on the image. will be on the '/makeYourMeme' path
-- [ ] screen shot the page as pdf button on the '/makeYourMeme' path
+- [ ] Home button/ a back button to return to the Image list. this will be on the - '/makeYourMeme' path
+- [ ] Text box which is a form with a submit button on the - '/makeYourMeme' path
+- [ ] Image that was selected from the images list. Displayed on the - '/makeYourMeme' path
+- [ ] Text inserted from the form that will be overlayed on the image. will be on the - '/makeYourMeme' path
+- [ ] screen shot the page as pdf button on the - '/makeYourMeme' path
 
     *If we decide to make a '/yourMeme' path this will display components image and text and back button as well as the save button.*
 
@@ -56,7 +57,7 @@ https://am22.akamaized.net/tms/cnt/uploads/2016/03/ancient-aliens-guy-1170x1024.
 
 - [ ] Options for a top and middle text placement with associated drop down selector button. This will be on the '/makeYourMeme' path
 - [ ] Ability to share the text that is entered in the form with the url and have that also share with the text in the image. allowing a dynamic route that you could paste and would generate the final meme.
-- [ ] Text colour selector button next to the location selection. On the '/makeYourMeme' path
+- [ ] Text colour selector button next to the location selection. On the - '/makeYourMeme' path
 
 ## 4: Create Image JSON file with a selection of meme worthy material.
 Create the JSON file as an array of objects each with an ID Name and File source. Alt text also to describe the image.
