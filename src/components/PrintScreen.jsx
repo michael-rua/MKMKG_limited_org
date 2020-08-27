@@ -1,11 +1,13 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+
+import { Button } from 'semantic-ui-react'
 
 function PrintScreen() {
   return (
     <>
       <h1>PrintScreen</h1>
-      <button class="button" type="button"><a href="#" onclick="window.print();return false;" title="Print Meme">Print Meme</a></button>
+      <Button primary>Save Your Meme</Button>
+      
     </>
   )
 }
@@ -14,3 +16,4 @@ export default PrintScreen
 
 //Calls print window
 
+{/* <button class="button" type="button"><a href="#" onclick="window.print();return false;" title="Print Meme">Print Meme</a></button> */}

@@ -1,10 +1,12 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+
+import { Image } from 'semantic-ui-react'
 
 function BigImage() {
   return (
     <>
       <h1>BigImage</h1>
+      <Image src='https://via.placeholder.com/640x360' />
     </>
   )
 }

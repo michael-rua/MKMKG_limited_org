@@ -5,6 +5,7 @@ import Home from './Home'
 import ImageList from './ImageList'
 import MemeBuilder from './MemeBuilder'
 import YourMeme from './YourMeme'
+import Canvas from './Canvas'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/imageList' component={ImageList} />
           <Route path='/memeBuilder' component={MemeBuilder} />
           <Route path='/yourMeme' component={YourMeme} />
+          {/* <Canvas text='testing the meme machine' /> */}
       </div>
     </>
   )
