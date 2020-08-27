@@ -11,7 +11,7 @@ function Home() {
       <div>
         <Button animated='fade' size='massive' href='/#/imageList' color='red'>
           <Button.Content visible>Click Me to make a MEME</Button.Content>
-          <Button.Content hidden>MEME Time!!!!</Button.Content>
+          <Button.Content hidden>MEME Time!!!</Button.Content>
         </Button>
       </div>
     </>

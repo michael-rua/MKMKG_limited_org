@@ -1,12 +1,17 @@
 import React from 'react'
 
-import { Button } from 'semantic-ui-react'
+import { Button, Icon } from 'semantic-ui-react'
 
 function ReturnToImageList() {
   return (
     <>
-      <h1>ReturnToImageList</h1>
-      <Button primary>Image List</Button>
+      
+      <Button animated href='/#/imageList' size='medium' color='purple'>
+      <Button.Content visible>Return To Images</Button.Content>
+      <Button.Content hidden>
+        <Icon name='arrow left' />
+      </Button.Content>
+    </Button>
     </>
   )
 }
