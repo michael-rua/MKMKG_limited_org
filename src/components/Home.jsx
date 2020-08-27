@@ -6,9 +6,14 @@ import { Button } from 'semantic-ui-react'
 function Home() {
   return (
     <>
-      <h1>Home</h1>
-      <h3>React to our memes</h3>
-      <Button primary>Start the meme-ing!</Button>
+      
+      <h2>React to our memes</h2>
+      <div>
+        <Button animated='fade' size='massive' href='/#/imageList'>
+          <Button.Content visible>Click Me to make a MEME</Button.Content>
+          <Button.Content hidden>MEME Time!!!!</Button.Content>
+        </Button>
+      </div>
     </>
   )
 }
