@@ -9,7 +9,7 @@ function Home() {
       
       <h2>React to our memes</h2>
       <div>
-        <Button animated='fade' size='massive' href='/#/imageList'>
+        <Button animated='fade' size='massive' href='/#/imageList' color='red'>
           <Button.Content visible>Click Me to make a MEME</Button.Content>
           <Button.Content hidden>MEME Time!!!!</Button.Content>
         </Button>
