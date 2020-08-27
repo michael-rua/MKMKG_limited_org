@@ -11,12 +11,15 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1>Meme Machine</h1>
-        <Route exact path="/" component={Home} />
-        <Route path="/imageList" component={ImageList} />
-        <Route path="/memeBuilder" component={MemeBuilder} />
-        <Route path="/yourMeme" component={YourMeme} />
-        {<Canvas text="testing the meme machine" />}
+        <div className='header'>
+          <h1>Meme Machine</h1>
+        </div>
+        
+        <Route exact path='/' component={Home} />
+        <Route path='/imageList' component={ImageList} />
+        <Route path='/memeBuilder/:image' component={MemeBuilder} />
+        <Route path='/yourMeme/:image/:text' component={YourMeme} />
+        {/* <Canvas text='testing the meme machine' /> */}
       </div>
     </>
   )
