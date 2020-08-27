@@ -15,7 +15,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route path='/imageList' component={ImageList} />
           <Route path='/memeBuilder' component={MemeBuilder} />
-          <Route path='/yourMeme' component={YourMeme} />
+          <Route path='/yourMeme/:image/:text' component={YourMeme} />
           {/* <Canvas text='testing the meme machine' /> */}
       </div>
     </>
