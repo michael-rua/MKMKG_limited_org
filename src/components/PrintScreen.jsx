@@ -6,8 +6,12 @@ function PrintScreen() {
   return (
     <>
       <h1>PrintScreen</h1>
-      <Button primary>Save Your Meme</Button>
       
+ <div>
+  <Button onclick='window.print();return false;' href='#' >
+  <Button.Content>Click Me to save your meme</Button.Content>
+  </Button> 
+ </div>   
     </>
   )
 }
@@ -16,4 +20,3 @@ export default PrintScreen
 
 //Calls print window
 
-{/* <button class="button" type="button"><a href="#" onclick="window.print();return false;" title="Print Meme">Print Meme</a></button> */}

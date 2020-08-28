@@ -14,3 +14,8 @@
 .hidden {
   display: none;
 }
+
+.home-button {
+
+  top: 30vh;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+
+import {Image} from 'semantic-ui-react'
 
 import TextInput from './TextInput'
 import BigImage from './BigImage'
@@ -10,12 +11,10 @@ function MemeBuilder(props) {
     <>
       <h1>MemeBuilder</h1>
       <TextInput {...props} />
-      <BigImage />
+      <BigImage {...props}/>
       <ReturnToImageList />
     </>
   )
 }
 
 export default MemeBuilder
-
-//Wrapper for text input and big image
