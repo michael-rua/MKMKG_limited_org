@@ -6,6 +6,7 @@ import ImageList from "./ImageList"
 import MemeBuilder from "./MemeBuilder"
 import YourMeme from "./YourMeme"
 import Canvas from "./Canvas"
+import PrintScreen from "./PrintScreen"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         </div>
         
         <Route exact path='/' component={Home} />
+        
         <Route path='/imageList' component={ImageList} />
         <Route path='/memeBuilder/:image' component={MemeBuilder} />
         <Route path='/yourMeme/:image/:text' component={YourMeme} />
