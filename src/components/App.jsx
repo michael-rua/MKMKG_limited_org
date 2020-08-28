@@ -14,13 +14,7 @@ function App() {
   return (
     <>
       <div className="App">
-
-        <div className='header'>
-          <Header size='huge'>Meme Machine</Header>
-        </div>
-        
         <Route exact path='/' component={Home} />
-        
         <Route path='/imageList' component={ImageList} />
         <Route path='/memeBuilder/:image' component={MemeBuilder} />
         <Route path='/yourMeme/:image/:text' component={YourMeme} />

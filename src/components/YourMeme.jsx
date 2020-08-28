@@ -1,5 +1,7 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Route, } from 'react-router-dom'
+
+import { Header } from 'semantic-ui-react'
 
 import Canvas from './Canvas'
 import BigImage from './BigImage'
@@ -12,6 +14,9 @@ function YourMeme(props) {
   return (
     <>
       {/* <BigImage {...props}/> */}
+      <div className='header'>
+        <Header size='small'>Enjoy Your Meme!</Header>
+      </div>
       <Canvas {...props}/>
       <ReturnToHome />
       <ShareURL />
