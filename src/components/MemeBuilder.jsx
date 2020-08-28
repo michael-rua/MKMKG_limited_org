@@ -7,14 +7,13 @@ import BigImage from './BigImage'
 import ReturnToImageList from './ReturnToImageList'
 
 function MemeBuilder (props) {
-  const Meme = props.match.params.image
+  // const Meme = props.match.params.image
 
   return (
     <>
-      <h1>MemeBuilder</h1>
       <TextInput />
-      <Image src={`/images/${Meme}.png`}/>
-      {/* <BigImage /> */}
+      {/* <Image src={`/images/${Meme}.png`}/> */}
+      <BigImage {...props}/>
       <ReturnToImageList />
     </>
   )
