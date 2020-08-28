@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import backImg from "../images/karel.png"
+// import backImg from "/images/karel.png"
 
 // props.match.image
 // props.match.name
@@ -21,7 +21,7 @@ class Canvas extends React.Component {
     return (
       <div>
         <canvas ref="canvas" width={1280} height={720} />
-        <img ref="image" src={backImg} className="hidden" />
+        <img ref="image" src='/images/karel.png' className="hidden" />
       </div>
     )
   }

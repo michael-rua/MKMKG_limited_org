@@ -1,21 +1,23 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+
+import {Image} from 'semantic-ui-react'
 
 import TextInput from './TextInput'
 import BigImage from './BigImage'
 import ReturnToImageList from './ReturnToImageList'
 
-function MemeBuilder() {
+function MemeBuilder (props) {
+  const Meme = props.match.params.image
+
   return (
     <>
       <h1>MemeBuilder</h1>
       <TextInput />
-      <BigImage />
+      <Image src={`/images/${Meme}.png`}/>
+      {/* <BigImage /> */}
       <ReturnToImageList />
     </>
   )
 }
 
 export default MemeBuilder
-
-//Wrapper for text input and big image
