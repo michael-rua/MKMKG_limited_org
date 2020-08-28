@@ -6,11 +6,11 @@ import TextOverlay from './TextOverlay'
 import PrintScreen from './PrintScreen'
 import ReturnToHome from './ReturnToHome'
 
-function YourMeme() {
+function YourMeme(props) {
   return (
     <>
       <h1>YourMeme</h1>
-      <BigImage />
+      <BigImage {...props}/>
       <TextOverlay />
       <PrintScreen />
       <ReturnToHome />

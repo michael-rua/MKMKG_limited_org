@@ -9,7 +9,7 @@ class TextInput extends Component {
 }
 
   handleURL = () => {
-    this.props.history.push(`/${this.props.match.params.image}/${this.state.text}`)
+    this.props.history.push(`/yourMeme/${this.props.match.params.image}/${this.state.text}`)
   }
 
   handleChange = (evt) => {
