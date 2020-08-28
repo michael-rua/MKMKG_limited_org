@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 
 class TextInput extends Component {
-  state = {
+  constructor(props) {
+  super(props)
+    this.state = {
     text: ''
   }
+}
 
   handleURL = () => {
-    this.props.history.push(`/${window.location.href}/${this.state.text}`)
+    this.props.history.push(`/${this.props.match.params.image}/${this.state.text}`)
   }
 
   handleChange = (evt) => {
