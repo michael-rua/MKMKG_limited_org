@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react"
 
-import { Button } from 'semantic-ui-react'
+import { Button } from "semantic-ui-react"
 
 function ReturnToHome() {
   return (
     <>
       <h1>ReturnToHome</h1>
-      <Button primary>Home</Button>
+      <Button href="/" primary>
+        Home
+      </Button>
     </>
   )
 }

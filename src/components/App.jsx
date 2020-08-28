@@ -1,11 +1,11 @@
-import React from 'react'
-import { Route } from 'react-router-dom'
+import React from "react"
+import { Route } from "react-router-dom"
 
-import Home from './Home'
-import ImageList from './ImageList'
-import MemeBuilder from './MemeBuilder'
-import YourMeme from './YourMeme'
-import Canvas from './Canvas'
+import Home from "./Home"
+import ImageList from "./ImageList"
+import MemeBuilder from "./MemeBuilder"
+import YourMeme from "./YourMeme"
+import Canvas from "./Canvas"
 
 function App() {
   return (
