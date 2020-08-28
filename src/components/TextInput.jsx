@@ -1,34 +1,30 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-//import { Input, Image, Button, Segment } from 'semantic-ui-react'
-import { Form } from 'semantic-ui-react'
+class TextInput extends Component {
+  state = {
+    text: ''
+  }
 
-function TextInput() {
-  return (
-    <>
-      <Form>
-        <Form.Group>
-          <Form.Input
-            placeholder='Meme text....'
-            name='memeText'
-            value={'memeText'}
-          />
-          <Form.Button content='Submit' />
-        </Form.Group>
-      </Form>
-    </>
-  )
+  handleURL = () => {
+    this.props.history.push(`/${window.location.href}/${this.state.text}`)
+  }
+
+  handleChange = (evt) => {
+    this.setState({ text: evt.target.value })
+  }
+
+
+  render() {
+    return (
+      <>
+        <form>
+          <input type="text" placeholder="Write your meme text..." value={this.state.text} onChange={this.handleChange} />
+          <input type="submit" onClick={this.handleURL} />
+        </form>
+      </>
+    )
+  }
 }
 
 export default TextInput
 
-//Form field input for meme text, submit button
-  // < div >
-  // <h1>TextInput</h1>
-  // <Input focus placeholder='Meme text...' />
-  // <Segment inverted>
-  //   <Button inverted color='blue'>
-  //     Submit
-  //         </Button>
-  // </Segment>
-  // </div >

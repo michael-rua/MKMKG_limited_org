@@ -5,11 +5,11 @@ import TextInput from './TextInput'
 import BigImage from './BigImage'
 import ReturnToImageList from './ReturnToImageList'
 
-function MemeBuilder() {
+function MemeBuilder(props) {
   return (
     <>
       <h1>MemeBuilder</h1>
-      <TextInput />
+      <TextInput {...props} />
       <BigImage />
       <ReturnToImageList />
     </>
