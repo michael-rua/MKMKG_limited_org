@@ -13,7 +13,7 @@ function ImageList() {
   
   return (
     <>
-      <h1>ImageList</h1>
+      <h1>Choose your victim:</h1>
 
       <Grid padded>
 

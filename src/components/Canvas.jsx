@@ -6,7 +6,9 @@ import ReactDOM from "react-dom"
 // props.match.name
 
 class Canvas extends React.Component {
-
+  constructor(props){
+    super(props)
+  }
 
   componentDidMount() {
     const canvas = this.refs.canvas
@@ -15,9 +17,13 @@ class Canvas extends React.Component {
 
     img.onload = () => {
       ctx.drawImage(img, 0, 0)
-      ctx.font = "50px Courier"
+      ctx.font = "50px Anton"
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 8;
+      ctx.strokeText(this.props.match.params.text.toUpperCase(), 210, 75)
+      ctx.fillStyle = 'white'
       // ctx.fillText(this.props.text, 210, 75) // THIS IS THE PLACE TEXT IS EMBEDDED INTO THE PICTURE
-      ctx.fillText('test text', 210, 75)
+      ctx.fillText(this.props.match.params.text.toUpperCase(), 210, 75)
     }
   }
   render() {
@@ -31,3 +37,5 @@ class Canvas extends React.Component {
   }
 }
 export default Canvas
+
+// font-family: 'Anton', sans-serif;

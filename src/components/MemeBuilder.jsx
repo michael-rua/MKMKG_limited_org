@@ -9,7 +9,6 @@ import ReturnToImageList from './ReturnToImageList'
 function MemeBuilder(props) {
   return (
     <>
-      <h1>MemeBuilder</h1>
       <TextInput {...props} />
       <BigImage {...props}/>
       <ReturnToImageList />
