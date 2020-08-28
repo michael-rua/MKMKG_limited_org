@@ -5,8 +5,8 @@ import { Button } from "semantic-ui-react"
 function ReturnToHome() {
   return (
     <>
-      <Button href="/" primary>
-        Return to home
+      <Button href="/"  id="returnToHome">
+        Start Again?
       </Button>
     </>
   )

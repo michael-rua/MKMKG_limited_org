@@ -9,7 +9,7 @@ class TextInput extends Component {
 }
 
   handleURL = () => {
-    this.props.history.push(`/${this.props.match.params.image}/${this.state.text}`)
+    this.props.history.push(`/yourMeme/${this.props.match.params.image}/${this.state.text}`)
   }
 
   handleChange = (evt) => {
@@ -20,9 +20,9 @@ class TextInput extends Component {
   render() {
     return (
       <>
-        <form>
-          <input type="text" placeholder="Write your meme text..." value={this.state.text} onChange={this.handleChange} />
-          <input type="submit" onClick={this.handleURL} />
+        <form id='form'>
+          <input id='input' type="text" placeholder="Write your meme text..." value={this.state.text} onChange={this.handleChange} />
+          <input id='button' type="submit" onClick={this.handleURL} />
         </form>
       </>
     )

@@ -3,10 +3,10 @@ import React from 'react'
 import { Button, Icon } from 'semantic-ui-react'
 
 function ReturnToImageList() {
-  return (
+  return(
     <>
       
-      <Button animated href='/#/imageList' size='medium' color='purple'>
+      <Button animated href='/#/imageList' size='large' id="returnToImageBtn" >
       <Button.Content visible>Return To Images</Button.Content>
       <Button.Content hidden>
         <Icon name='arrow left' />

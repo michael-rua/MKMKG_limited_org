@@ -1,6 +1,8 @@
 import React from "react"
 import { Route } from "react-router-dom"
 
+import { Header } from 'semantic-ui-react'
+
 import Home from "./Home"
 import ImageList from "./ImageList"
 import MemeBuilder from "./MemeBuilder"
@@ -12,8 +14,9 @@ function App() {
   return (
     <>
       <div className="App">
+
         <div className='header'>
-          <h1>Meme Machine</h1>
+          <Header size='huge'>Meme Machine</Header>
         </div>
         
         <Route exact path='/' component={Home} />

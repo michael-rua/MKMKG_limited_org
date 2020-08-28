@@ -6,16 +6,15 @@ import BigImage from './BigImage'
 import TextOverlay from './TextOverlay'
 import PrintScreen from './PrintScreen'
 import ReturnToHome from './ReturnToHome'
+import ShareURL from './ShareURL'
 
 function YourMeme(props) {
   return (
     <>
-      <h1>YourMeme</h1>
       {/* <BigImage {...props}/> */}
       <Canvas {...props}/>
-      <TextOverlay />
-      <PrintScreen />
       <ReturnToHome />
+      <ShareURL />
     </>
   )
 }

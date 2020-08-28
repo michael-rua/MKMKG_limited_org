@@ -20,10 +20,10 @@ class Canvas extends React.Component {
       ctx.font = "50px Anton"
       ctx.strokeStyle = 'black';
       ctx.lineWidth = 8;
-      ctx.strokeText(this.props.match.params.text.toUpperCase(), 210, 75)
+      ctx.strokeText(this.props.match.params.text.toUpperCase(), 320, 75)
       ctx.fillStyle = 'white'
       // ctx.fillText(this.props.text, 210, 75) // THIS IS THE PLACE TEXT IS EMBEDDED INTO THE PICTURE
-      ctx.fillText(this.props.match.params.text.toUpperCase(), 210, 75)
+      ctx.fillText(this.props.match.params.text.toUpperCase(), 320, 75)
     }
   }
   render() {
