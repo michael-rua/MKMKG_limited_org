@@ -6,6 +6,8 @@ import ReactDOM from "react-dom"
 // props.match.name
 
 class Canvas extends React.Component {
+
+
   componentDidMount() {
     const canvas = this.refs.canvas
     const ctx = canvas.getContext("2d")
@@ -14,14 +16,16 @@ class Canvas extends React.Component {
     img.onload = () => {
       ctx.drawImage(img, 0, 0)
       ctx.font = "50px Courier"
-      ctx.fillText(this.props.text, 210, 75) // THIS IS THE PLACE TEXT IS EMBEDDED INTO THE PICTURE
+      // ctx.fillText(this.props.text, 210, 75) // THIS IS THE PLACE TEXT IS EMBEDDED INTO THE PICTURE
+      ctx.fillText('test text', 210, 75)
     }
   }
   render() {
+    console.log(`/images/${this.props.match.params.image}.png`)
     return (
       <div>
         <canvas ref="canvas" width={1280} height={720} />
-        <img ref="image" src='/images/karel.png' className="hidden" />
+        <img ref="image" src={`/images/${this.props.match.params.image}.png`} className="hidden" />
       </div>
     )
   }
