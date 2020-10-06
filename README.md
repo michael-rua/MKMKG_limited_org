@@ -1,5 +1,11 @@
 
-# MKMKG Ltd Org 
+# Meme Maker
+
+This project was a single day team project in which we built a meme making website. It uses images of our teachers at EDA and is meant in the kindest of ways to have fun and test our react knowledge. 
+
+to run the code npm i, npm start
+
+or view it on https://mkmkg.herokuapp.com/#/
 
 ### MVP User request
 
